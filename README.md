@@ -16,7 +16,7 @@ public class CsvFileParser implements FileParser {
        // Implémentation spécifique au nouveau format...
     }
 ```
-Ensuite, il vous suffit de modifier le résolveur pour prendre en compte ce nouveau format, comme indiqué ci-dessous :
+Ensuite, il vous suffit de modifier le resolver pour prendre en compte ce nouveau format, comme indiqué ci-dessous :
 
 ```java
 case "xml":
@@ -24,8 +24,8 @@ case "xml":
 case "csv":
     return new CsvFileParser();
 ```
-L'ajout de ces une ou deux lignes dans le résolveur est donc tout ce qui est nécessaire pour intégrer un nouveau format.
+L'ajout de ces une ou deux lignes dans le resolver est donc tout ce qui est nécessaire pour intégrer un nouveau format.
 
-## Fonctionnalités restantes
+### Fonctionnalités restantes
 - L'implementation des fichiers csv, json et txt
 - Ajout de la partie Front-End
