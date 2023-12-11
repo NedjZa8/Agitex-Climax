@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<climax>
+    <client>
+        <nom>UCHIHA</nom>
+        <prenom>Itachi</prenom>
+        <age>30</age>
+        <profession>shinobi</profession>
+        <salaire>200</salaire>
+    </client>
+    <client>
+        <nom>BAKYONO</nom>
+        <prenom>Arnaud</prenom>
+        <age>30</age>
+        <profession>informaticien</profession>
+        <salaire>35</salaire>
+    </client>
+</climax>

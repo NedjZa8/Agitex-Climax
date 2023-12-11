@@ -1,0 +1,11 @@
+- nom: LUPIN
+  prenom: Arsène
+  age: 30
+  profession: cambrioleur
+  salaire: 500
+
+- nom: HOLMES
+  prenom: Sherlock
+  age: 45
+  profession: detective
+  salaire: 33
