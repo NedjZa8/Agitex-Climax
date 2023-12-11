@@ -25,3 +25,7 @@ case "csv":
     return new CsvFileParser();
 ```
 L'ajout de ces une ou deux lignes dans le résolveur est donc tout ce qui est nécessaire pour intégrer un nouveau format.
+
+## Fonctionnalités restantes
+- L'implementation des fichiers csv, json et txt
+- Ajout de la partie Front-End

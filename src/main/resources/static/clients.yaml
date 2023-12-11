@@ -1,11 +1,17 @@
-- nom: LUPIN
-  prenom: Arsène
-  age: 30
-  profession: cambrioleur
-  salaire: 500
+- nom: NEDJOLBE
+  prenom: Adamou
+  age: 73
+  profession: president
+  salaire: 900
 
-- nom: HOLMES
-  prenom: Sherlock
-  age: 45
-  profession: detective
-  salaire: 33
+- nom: NEDJOLBE
+  prenom: Rosalie
+  age: 63
+  profession: ministre
+  salaire: 300
+
+- nom: NEDJOLBE
+  prenom: Annie
+  age: 25
+  profession: ministre
+  salaire: 300

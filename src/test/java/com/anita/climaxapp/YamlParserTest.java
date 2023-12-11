@@ -24,12 +24,12 @@ class YamlParserTest {
         var clients = fileParser.getFileContent(resource.getFile());
 
         assertEquals(
-            new Client("LUPIN", "Arsène", 30, "cambrioleur", 500000),
+            new Client("NEDJOLBE", "stephanie", 34, "comptable", 250000),
             clients.get(0)
         );
 
         assertEquals(
-            new Client("HOLMES", "Sherlock", 45, "detective", 33000),
+            new Client("NEDJOLBE", "Annie", 25, "informaticienne", 250000),
             clients.get(1)
         );
     }

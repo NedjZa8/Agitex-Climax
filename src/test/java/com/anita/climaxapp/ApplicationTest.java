@@ -33,9 +33,9 @@ class ApplicationTest {
         file = new File("fakeFile.xml");
 
         clientsList = Arrays.asList(
-            new Client("UCHIHA", "Itachi", 30, "shinobi", 200000),
-            new Client("ZOUS", "Adrien", 30, "informaticien", 35000),
-            new Client("BAKYONO", "Arnaud", 30, "informaticien", 45000)
+            new Client("NEDJOLBE", "Bintou", 43, "comptable", 200000),
+            new Client("NEDJOLBE", "Stephanie", 34, "comptable", 35000),
+            new Client("NEDJOLBE", "Annie", 30, "informaticienne", 45000)
         );
     }
 
@@ -57,17 +57,17 @@ class ApplicationTest {
 
     private void whenFileParserIsCalledReturnClientsList() throws FileParserException {
         when(fileParser.getFileContent(file)).thenReturn(Arrays.asList(
-            new Client("UCHIHA", "Itachi", 30, "shinobi", 200000),
-            new Client("ZOUS", "Adrien", 30, "informaticien", 35000),
-            new Client("BAKYONO", "Arnaud", 30, "informaticien", 45000)
+            new Client("NEDJOLBE", "Bintou", 43, "comptable", 400000),
+            new Client("NEDJOLBE", "Stephanie", 34, "comptable", 250000),
+            new Client("NEDJOLBE", "Annie", 30, "informaticienne", 250000)
         ));
     }
 
     @Test
     void calculateMeanByProfession() throws FileParserException {
         var result = applicationService.getMeanByProfession(clientsList);
-        assertEquals(result.get(0), new GroupResult("shinobi", 200000));
-        assertEquals(result.get(1), new GroupResult("informaticien", 40000));
+        assertEquals(result.get(0), new GroupResult("comptable", 400000));
+        assertEquals(result.get(1), new GroupResult("informaticienne", 250000));
     }
 
     private void assertClientsListMatches(List<Client> expectedClients, List<Client> clients) {

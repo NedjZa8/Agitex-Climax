@@ -24,12 +24,12 @@ class XmlParserTest {
         var clients = fileParser.getFileContent(resource.getFile());
 
         assertEquals(
-            new Client("UCHIHA", "Itachi", 30, "shinobi", 200000),
+            new Client("NEDJOLBE", "Annie", 25, "informaticienne", 250000),
             clients.get(0)
         );
 
         assertEquals(
-            new Client("BAKYONO", "Arnaud", 30, "informaticien", 35000),
+            new Client("NEDJOLBE", "Bintou", 43, "comptable", 400000),
             clients.get(1)
         );
     }
